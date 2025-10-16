@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx" /* this allows our JSX to be transpiled correctly */,
+    "target": "es6",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true /* Need for Webpack config file */,
+    "forceConsistentCasingInFileNames": true /* Ensure that casing is correct in imports. */,
+    "strict": true,
+    "skipLibCheck": true,
+    "outDir": "out",
+    "moduleResolution": "node",
+    "sourceMap": true,
+  },
+  "include": ["**/*.ts", "**/*.tsx"]
+}
