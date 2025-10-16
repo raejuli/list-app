@@ -1,11 +1,9 @@
-import {useEffect} from "react";
+import {List} from "../List";
 
 export function Content() {
     return (
         <div>
-            <p>
-                This is some content ideally
-            </p>
+            <List items={["item1", "item2", "item3"]}/>
         </div>
     );
 }
