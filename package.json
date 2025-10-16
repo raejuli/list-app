@@ -1,7 +1,7 @@
 {
-  "name": "simple-webpack-project",
+  "name": "list-app",
   "version": "1.0.0",
-  "description": "Simple project setup to use typescript with webpack",
+  "description": "List app using typescript and react",
   "main": "entry.ts",
   "scripts": {
     "build": "webpack",
