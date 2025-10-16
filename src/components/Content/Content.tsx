@@ -1,9 +1,20 @@
+import {useEffect, useState} from "react";
 import {List} from "../List";
 
 export function Content() {
+    const [listData, setListData] = useState();
+
+    useEffect(() => {
+        fetch("/api/items").then((r) =>
+        {
+            r.json().then((v) => {
+                setListData(v.list);
+            })
+        });
+    }, []);
     return (
         <div>
-            <List items={["item1", "item2", "item3"]}/>
+            {listData && <List initialItems={listData}/>}
         </div>
     );
 }
