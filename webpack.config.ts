@@ -40,7 +40,13 @@ const config = {
         static: {
             directory: path.resolve(__dirname, "out")
         },
-        compress: true
+        compress: true,
+        proxy: [
+            {
+                context: ['/api'],
+                target: 'http://localhost:6969',
+            }
+        ]
     }
 };
 

@@ -8,10 +8,11 @@ export function Content() {
         fetch("/api/items").then((r) =>
         {
             r.json().then((v) => {
-                setListData(v.list);
-            })
+                setListData(v);
+            });
         });
     }, []);
+
     return (
         <div>
             {listData && <List initialItems={listData}/>}
