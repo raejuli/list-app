@@ -37,7 +37,7 @@ export const List = forwardRef<ListRef, ListProps>(({initialItems, onItemAdded, 
         
         setIsAdding(true);
         try {
-            const response = await fetch('/api/items', {
+            const response = await fetch(`https://listapi.${window.location.hostname}/api/items`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -66,7 +66,7 @@ export const List = forwardRef<ListRef, ListProps>(({initialItems, onItemAdded, 
     const handleDeleteItem = async (id: number) => {
         setDeletingId(id);
         try {
-            const response = await fetch(`/api/items/${id}`, {
+            const response = await fetch(`https://listapi.${window.location.hostname}/api/items/${id}`, {
                 method: 'DELETE',
                 headers: {
                     'Authorization': `Bearer ${token}`
