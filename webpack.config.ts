@@ -35,7 +35,7 @@ const config = {
             patterns: [{from: "src/public"}]
         })
     ],
-    watch: true,
+    watch: false,
     devServer: {
         static: {
             directory: path.resolve(__dirname, "out")

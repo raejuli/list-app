@@ -5,7 +5,7 @@
   "main": "entry.ts",
   "scripts": {
     "build": "webpack",
-    "serve": "webpack serve"
+    "serve": "webpack -w serve"
   },
   "author": "",
   "license": "ISC",
