@@ -10,7 +10,7 @@ export function Content() {
     useEffect(() => {
         if (token) {
             setIsLoading(true);
-            fetch(`https://listapi.${window.location.hostname}/api/items`, {
+            fetch(`https://listapi.${window.location.hostname.split('.')[1]}/api/items`, {
                 headers: {
                     'Authorization': `Bearer ${token}`
                 }
