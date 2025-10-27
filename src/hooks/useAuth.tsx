@@ -68,7 +68,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
     const login = async (username: string, password: string) => {
         try {
-            const response = await fetch(`https://listapi.${window.location.hostname.split('.')[1]}.site}/api/auth/login`, {
+            const response = await fetch(`https://listapi.${window.location.hostname.split('.')[1]}.site/api/auth/login`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
